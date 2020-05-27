@@ -1,12 +1,8 @@
 server:
   port: 8087
 spring:
-  cloud:
-    config:
-      label: master #分支名称
-      name: config  #配置文件名称
-      profile: warhousehome  #读取后缀名称
-      uri: http://localhost:3344  #配置中心地址
+  profiles:
+    active: dev
   application:
     name: cloud_permission
   datasource:
